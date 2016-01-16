@@ -1,19 +1,16 @@
 #!/bin/bash
 
-if [ -f ~/.bash_profile ]; then
-    mv ~/.bash_profile ~/.bash_profile.bak
-fi
+function install_dot() {
+  _file=$1
+  _dotfile=~/.${_file}
+  if [ -f ${_dotfile} -a ! -L ${_dotfile} ]; then
+      mv ${_dotfile} ${_dotfile}.bak
+  fi
+  ln -fs `pwd`/${_file} ${_dotfile}
+  echo "..installing ${_file}"
+}
 
-if [ -f ~/.bashrc ]; then
-    mv ~/.bashrc ~/.bashrc.bak
-fi
-
-if [ -f ~/.iex.exs ]; then
-    mv ~/.iex.exs ~/.iex.exs.bak
-fi
-
-( ln -s `pwd`/bash_profile ~/.bash_profile &&
-    ln -s `pwd`/bashrc ~/.bashrc &&
-    ln -s `pwd`/iex.exs ~/.iex.exs &&
-    echo "Install completed"
-) || echo "Install failed"
+install_dot bash_profile
+install_dot bashrc
+install_dot iex.exs
+install_dot spacemacs
