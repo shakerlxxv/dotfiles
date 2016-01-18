@@ -23,3 +23,16 @@ alias spec='bundle exec rspec'
 
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
+
+export PROJECTS=/Users/bshaver/Documents/Projects
+
+function rbv() {
+  _filename=$1
+  find $PROJECTS/VSGNNE.svn/tags -name ${_filename} | grep -v rollback
+}
+
+function rbvc() {
+  _filename=$1
+  _rb_file=`find $PROJECTS/VSGNNE.svn/tags -name ${_filename} | grep -v rollback | tail -1`
+  cp -p ${_rb_file} $PROJECTS/apex/apex_scripts/release/rollback/
+}
