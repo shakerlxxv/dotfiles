@@ -3,7 +3,7 @@
 function install_dot() {
   _file=$1
   _dotfile=~/.${_file}
-  if [ -f ${_dotfile} -a ! -L ${_dotfile} ]; then
+  if [ -e ${_dotfile} -a ! -L ${_dotfile} ]; then
       mv ${_dotfile} ${_dotfile}.bak
   fi
   ln -fs `pwd`/${_file} ${_dotfile}
@@ -14,3 +14,5 @@ install_dot bash_profile
 install_dot bashrc
 install_dot iex.exs
 install_dot spacemacs
+install_dot tmux.conf
+install_dot tmuxinator
