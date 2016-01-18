@@ -255,7 +255,10 @@ in `dotspacemacs/user-config'."
   "Configuration function for user code.
 This function is called at the very end of Spacemacs initialization after
 layers configuration. You are free to put any user code."
-    (add-hook 'alchemist-mode-hook 'company-mode)    
+
+  ;; TODO: eventually move this to a private layer stored with my ~/.dotfiles
+    (add-hook 'alchemist-mode-hook 'company-mode)
+    (x-focus-frame nil)
   )
 
 ;; Do not write anything past this comment. This is where Emacs will
