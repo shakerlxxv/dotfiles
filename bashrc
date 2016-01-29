@@ -20,6 +20,7 @@ alias less='less -r'
 alias be='bundle exec'
 alias cuke='bundle exec cucumber'
 alias spec='bundle exec rspec'
+alias svna="svn add \`svn status | grep \? | awk '{print \$2}'\`"
 
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
