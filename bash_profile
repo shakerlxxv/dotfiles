@@ -28,16 +28,16 @@ function proml {
  esac
 
 #style 1
-# PS1="${TITLEBAR}\
-# $BLUE[$RED\$(date +%H:%M)$BLUE]\
-# $BLUE[$RED\u@\h:\w$GREEN\$(parse_git_branch)$BLUE]\
-# $LIGHT_GRAY\$ "
+PS1="${TITLEBAR}\
+$BLUE[$RED\$(date +%H:%M)$BLUE]\
+$BLUE[$RED\u@\h:\w$GREEN\$(parse_git_branch)$BLUE]\
+$LIGHT_GRAY\n\$ "
 
 #style 2
-PS1="${TITLEBAR}\
-$GREEN[\$(date +%H:%M)]\
-[\u@\h:\w\$(parse_git_branch)]\
-\$$WHITE "
+# PS1="${TITLEBAR}\
+# $GREEN[\$(date +%H:%M)]\
+# [\u@\h:\w\$(parse_git_branch)]\
+# \$$WHITE "
 
 PS2='> '
 PS4='+ '

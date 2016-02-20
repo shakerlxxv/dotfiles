@@ -29,7 +29,7 @@ values."
      markdown
      syntax-checking
      auto-completion
-     company-mode
+     ;;company-mode
      erlang
      elixir
      git
@@ -38,9 +38,9 @@ values."
      html
      org
      colors
-     editorconfig
+     ;;editorconfig
      themes-megapack
-     perspectives
+     ;;perspectives
      ;; org
      ;; (shell :variables
      ;;        shell-default-height 30
@@ -259,6 +259,7 @@ layers configuration. You are free to put any user code."
   ;; TODO: eventually move this to a private layer stored with my ~/.dotfiles
     (add-hook 'alchemist-mode-hook 'company-mode)
     (x-focus-frame nil)
+    (spacemacs/set-leader-keys "op" 'sp-up-sexp)
   )
 
 ;; Do not write anything past this comment. This is where Emacs will
