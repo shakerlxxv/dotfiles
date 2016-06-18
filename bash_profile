@@ -56,3 +56,13 @@ export PATH
 if [ -f ~/.bashrc ]; then
             . ~/.bashrc
 fi
+
+test -e "${HOME}/.iterm2_shell_integration.bash" && source "${HOME}/.iterm2_shell_integration.bash"
+
+#-------------------------------------------------------------------------------
+# bash completion installed from homebrew
+#   /usr/local/etc/bash_completion.d
+#-------------------------------------------------------------------------------
+if [ -f $(brew --prefix)/etc/bash_completion ]; then
+  . $(brew --prefix)/etc/bash_completion
+fi
