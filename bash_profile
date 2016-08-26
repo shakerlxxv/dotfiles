@@ -4,6 +4,7 @@ export TNS_ADMIN=$ORA_CLIENT/network/admin
 export PATH=$PATH:$ORA_CLIENT
 export JAVA_HOME=`/usr/libexec/java_home -v 1.8`
 export R_HOME=/Library/Frameworks/R.framework/Resources
+export SVN_VSGNNE=/Users/bshaver/Documents/Projects/VSGNNE.svn
 
 # ----------------
 # from http://www.simplisticcomplexity.com/2008/03/13/show-your-git-branch-name-in-your-prompt/

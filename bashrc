@@ -30,7 +30,7 @@ export PROJECTS=/Users/bshaver/Documents/Projects
 
 function rbv() {
   _filename=$1
-  find $PROJECTS/VSGNNE.svn/tags -name ${_filename} | grep -v rollback
+  find $PROJECTS/VSGNNE.svn/tags -name ${_filename} | grep -iv rollback
 }
 
 function rbvc() {
