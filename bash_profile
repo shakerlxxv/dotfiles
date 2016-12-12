@@ -2,7 +2,7 @@ export ORA_CLIENT=/opt/oracle/instantclient
 export DYLD_LIBRARY_PATH=$DYLD_LIBRARY_PATH:$ORA_CLIENT/
 export TNS_ADMIN=$ORA_CLIENT/network/admin
 export PATH=$PATH:$ORA_CLIENT
-export JAVA_HOME=`/usr/libexec/java_home -v 1.8`
+export JAVA_HOME=`test -x /usr/libexec/java_home && /usr/libexec/java_home -v 1.8`
 export R_HOME=/Library/Frameworks/R.framework/Resources
 export SVN_VSGNNE=/Users/bshaver/Documents/Projects/VSGNNE.svn
 
@@ -64,6 +64,6 @@ test -e "${HOME}/.iterm2_shell_integration.bash" && source "${HOME}/.iterm2_shel
 # bash completion installed from homebrew
 #   /usr/local/etc/bash_completion.d
 #-------------------------------------------------------------------------------
-if [ -f $(brew --prefix)/etc/bash_completion ]; then
-  . $(brew --prefix)/etc/bash_completion
+if [ -f /usr/local/etc/bash_completion ]; then
+  . /usr/local/etc/bash_completion
 fi

@@ -1,3 +1,7 @@
+# Source global definitions
+if [ -f /etc/bashrc ]; then
+	. /etc/bashrc
+fi
 
 # give preference to the brew installed binaries over the Xcode command line tools
 export PATH=/usr/local/bin:$PATH
