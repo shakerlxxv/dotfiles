@@ -18,6 +18,7 @@ values."
    ;; of a list then all discovered layers will be installed.
    dotspacemacs-configuration-layers
    '(
+     ruby
      ;; ----------------------------------------------------------------
      ;; Example of useful layers you may want to use right away.
      ;; Uncomment some layer names and press <SPC f e R> (Vim style) or
@@ -107,9 +108,9 @@ values."
    ;; Press <SPC> T n to cycle to the next theme in the list (works great
    ;; with 2 themes variants, one dark and one light)
    dotspacemacs-themes '(spacemacs-dark
-                         spacemacs-light
-                         solarized-light
+                         twilight-anti-bright
                          solarized-dark
+                         solarized-light
                          leuven
                          monokai
                          zenburn)
@@ -249,6 +250,10 @@ values."
 It is called immediately after `dotspacemacs/init'.  You are free to put almost
 any user code here.  The exception is org related code, which should be placed
 in `dotspacemacs/user-config'."
+  (defun erlang-flymake-get-include-dirs ()
+    (list (concat (erlang-flymake-get-app-dir) "include")
+          (concat (erlang-flymake-get-app-dir) "../include")
+          (concat (erlang-flymake-get-app-dir) "deps")))
   )
 
 (defun dotspacemacs/user-config ()

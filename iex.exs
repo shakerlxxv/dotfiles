@@ -1,1 +1,1 @@
-IEx.configure colors: [ eval_result: [ :red ] ]
+IEx.configure colors: [ eval_result: [ :blue ] ]
