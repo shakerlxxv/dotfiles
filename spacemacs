@@ -31,6 +31,7 @@ values."
    ;; List of configuration layers to load.
    dotspacemacs-configuration-layers
    '(
+     ruby
      ;; ----------------------------------------------------------------
      ;; Example of useful layers you may want to use right away.
      ;; Uncomment some layer names and press <SPC f e R> (Vim style) or
@@ -140,9 +141,9 @@ values."
    ;; Press <SPC> T n to cycle to the next theme in the list (works great
    ;; with 2 themes variants, one dark and one light)
    dotspacemacs-themes '(spacemacs-dark
-                         spacemacs-light
-                         solarized-light
+                         twilight-anti-bright
                          solarized-dark
+                         solarized-light
                          leuven
                          monokai
                          zenburn)
@@ -303,11 +304,13 @@ values."
 
 (defun dotspacemacs/user-init ()
   "Initialization function for user code.
-It is called immediately after `dotspacemacs/init', before layer configuration
-executes.
- This function is mostly useful for variables that need to be set
-before packages are loaded. If you are unsure, you should try in setting them in
-`dotspacemacs/user-config' first."
+It is called immediately after `dotspacemacs/init'.  You are free to put almost
+any user code here.  The exception is org related code, which should be placed
+in `dotspacemacs/user-config'."
+  (defun erlang-flymake-get-include-dirs ()
+    (list (concat (erlang-flymake-get-app-dir) "include")
+          (concat (erlang-flymake-get-app-dir) "../include")
+          (concat (erlang-flymake-get-app-dir) "deps")))
   )
 
 (defun dotspacemacs/user-config ()

@@ -1,5 +1,5 @@
 export ORA_CLIENT=/opt/oracle/instantclient
-export DYLD_LIBRARY_PATH=$DYLD_LIBRARY_PATH:$ORA_CLIENT/
+export OCI_DIR=$ORA_CLIENT
 export TNS_ADMIN=$ORA_CLIENT/network/admin
 export PATH=$PATH:$ORA_CLIENT
 export JAVA_HOME=`test -x /usr/libexec/java_home && /usr/libexec/java_home -v 1.8`

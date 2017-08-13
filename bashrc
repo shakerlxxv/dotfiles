@@ -8,8 +8,6 @@ export PATH=/usr/local/bin:$PATH
 export PATH=/opt/subversion/bin:$PATH
 export PATH=/opt/oracle/instantclient:$PATH
 
-export DYLD_LIBRARY_PATH=/opt/oracle/instantclient/:$DYLD_LIBRARY_PATH
-
 export EDITOR=vim
 
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
