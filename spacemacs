@@ -31,6 +31,8 @@ values."
    ;; List of configuration layers to load.
    dotspacemacs-configuration-layers
    '(
+     csv
+     python
      ruby
      ;; ----------------------------------------------------------------
      ;; Example of useful layers you may want to use right away.

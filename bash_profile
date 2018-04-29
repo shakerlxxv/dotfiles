@@ -1,3 +1,8 @@
+# Get the aliases and functions
+if [ -f ~/.bashrc ]; then
+            . ~/.bashrc
+fi
+
 export ORA_CLIENT=/opt/oracle/instantclient
 export OCI_DIR=$ORA_CLIENT
 export TNS_ADMIN=$ORA_CLIENT/network/admin
@@ -53,10 +58,6 @@ proml
 PATH="${PATH}:/Library/Frameworks/JRuby.framework/Versions/Current/bin"
 export PATH
 
-# Get the aliases and functions
-if [ -f ~/.bashrc ]; then
-            . ~/.bashrc
-fi
 
 test -e "${HOME}/.iterm2_shell_integration.bash" && source "${HOME}/.iterm2_shell_integration.bash"
 
@@ -67,3 +68,6 @@ test -e "${HOME}/.iterm2_shell_integration.bash" && source "${HOME}/.iterm2_shel
 if [ -f /usr/local/etc/bash_completion ]; then
   . /usr/local/etc/bash_completion
 fi
+
+# added by Anaconda3 5.1.0 installer
+export PATH="/Users/bshaver/anaconda3/bin:$PATH"
