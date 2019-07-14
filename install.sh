@@ -16,3 +16,4 @@ install_dot iex.exs
 install_dot spacemacs
 install_dot tmux.conf
 install_dot tmuxinator
+install_dot sql

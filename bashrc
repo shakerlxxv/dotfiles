@@ -4,7 +4,8 @@ export PATH=/usr/local/bin:$PATH
 export PATH=/opt/subversion/bin:$PATH
 export PATH=/opt/oracle/instantclient:$PATH
 
-export DYLD_LIBRARY_PATH=/opt/oracle/instantclient/:$DYLD_LIBRARY_PATH
+#export DYLD_LIBRARY_PATH=/opt/oracle/instantclient/:$DYLD_LIBRARY_PATH
+export OCI_DIR=/opt/oracle/instantclient_11_2
 
 export EDITOR=vim
 
@@ -37,4 +38,8 @@ function rbvc() {
   _filename=$1
   _rb_file=`find $PROJECTS/VSGNNE.svn/tags -name ${_filename} | grep -v rollback | tail -1`
   cp -p ${_rb_file} $PROJECTS/apex/apex_scripts/release/rollback/
+}
+
+function gitall() {
+  gitk --all --first-parent --remotes --reflog --author-date-order -- $*
 }

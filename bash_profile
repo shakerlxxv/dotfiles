@@ -5,6 +5,10 @@ export PATH=$PATH:$ORA_CLIENT
 export JAVA_HOME=`/usr/libexec/java_home -v 1.8`
 export R_HOME=/Library/Frameworks/R.framework/Resources
 export SVN_VSGNNE=/Users/bshaver/Documents/Projects/VSGNNE.svn
+# for homebrew
+export PATH="/usr/local/sbin:$PATH"
+# for SQLcl
+export SQLPATH=${HOME}/.sql:${HOME}/Documents/Projects/m2s_oracle_apex/scripts/sql
 
 # ----------------
 # from http://www.simplisticcomplexity.com/2008/03/13/show-your-git-branch-name-in-your-prompt/
