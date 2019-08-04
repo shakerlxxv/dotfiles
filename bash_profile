@@ -13,6 +13,7 @@ export SVN_VSGNNE=/Users/bshaver/Documents/Projects/VSGNNE.svn
 # for homebrew
 export PATH="/usr/local/sbin:$PATH"
 # for SQLcl
+export PATH=${PATH}:/opt/oracle/sqlcl/bin
 export SQLPATH=${HOME}/.sql:${HOME}/Documents/Projects/m2s_oracle_apex/scripts/sql
 
 # ----------------
