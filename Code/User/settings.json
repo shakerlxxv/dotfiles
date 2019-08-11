@@ -1,0 +1,24 @@
+{
+    "workbench.colorTheme": "Solarized Dark",
+    "terminal.integrated.shell.osx": "/bin/bash",
+    "oracleDeveloperTools.networkConfiguration.configFilesLocation": "/Users/bshaver/Oracle/network/admin",
+    "oracleDeveloperTools.networkConfiguration.walletFileLocation": "/Users/bshaver/Oracle/network/admin",
+    "oracleDeveloperTools.oracleConnections": [
+        {
+            "connectionType": 2,
+            "dataSource": "localhost:1521/ORCL",
+            "name": "PW-vm-vsgnne",
+            "authenticationType": 2,
+            "dBAPrivilege": "None",
+            "userID": "VSGNNE",
+            "password": "oracle",
+            "passwordEmptyByUser": false,
+            "passwordSaved": true
+        }
+    ],
+    "editor.fontFamily": "'Source Code PRO',Menlo, Monaco, 'Courier New', monospace",
+    "window.zoomLevel": 0,
+    "vim.enableNeovim": true,
+    "vim.history": 150,
+    "vim.neovimPath": "/usr/local/bin/nvim"
+}

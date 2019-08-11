@@ -17,3 +17,8 @@ install_dot spacemacs
 install_dot tmux.conf
 install_dot tmuxinator
 install_dot sql
+install_dot vimrc
+
+# TODO add install for config/<dir> under ~/.config/<dir> synlinked
+# TODO add install for ~/.vim
+# TODO add install for Code/User/settings.json to ~/Library/ApplicationSupport/Code/User/settings.json
