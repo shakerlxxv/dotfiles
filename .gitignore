@@ -1,0 +1,11 @@
+# ignore vim swap files
+**.swp
+**.swo
+# ignore emacs temp files
+**.#*
+# ignore plugin files from github
+vim/autoload/plug.vim
+config/nvim/autoload/plug.vim
+vim/plugged/*
+# ignore undo data
+vim/undodir/*
