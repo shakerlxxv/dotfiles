@@ -7,6 +7,7 @@ fi
 export PATH=/usr/local/bin:$PATH
 export PATH=/opt/subversion/bin:$PATH
 export PATH=/opt/oracle/instantclient:$PATH
+export PATH=/opt/utPLSQL-cli/bin:$PATH
 
 #export DYLD_LIBRARY_PATH=/opt/oracle/instantclient/:$DYLD_LIBRARY_PATH
 export OCI_DIR=/opt/oracle/instantclient_11_2

@@ -9,3 +9,5 @@ config/nvim/autoload/plug.vim
 vim/plugged/*
 # ignore undo data
 vim/undodir/*
+# ignore any secrete files
+*secret*

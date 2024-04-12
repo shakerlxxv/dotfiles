@@ -1,6 +1,7 @@
+prompt Welcome Brian!
+
 SET SQLFORMAT ANSICONSOLE
 SET LINESIZE 200
-
 SET ECHO OFF
 
 --COL SID NEW_VALUE SID
@@ -25,10 +26,15 @@ SET ECHO OFF
 
 SET TERMOUT ON
 SET FEEDBACK ON
-SET SERVEROUTPUT ON SIZE 1000000
-
+SET SERVEROUTPUT ON
 SET TIMING ON
 
 DEFINE _EDITOR=vi
 
-SCRIPT prompt.js
+SCRIPT /Users/brian.shaver/.sql/prompt.js
+SCRIPT /Users/brian.shaver/.sql/fivos_sqlcl.js
+
+SET sqlprompt "_user'@'_connect_identifier > "
+SET sqlformat ansiconsole
+SET serveroutput on
+
