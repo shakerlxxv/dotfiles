@@ -28,13 +28,16 @@ SET TERMOUT ON
 SET FEEDBACK ON
 SET SERVEROUTPUT ON
 SET TIMING ON
+SET SQLPROMPT "_user'@'_connect_identifier > "
+SET SQLFORMAT ANSICONSOLE
+
+-- Use for Object Generation with SQLcl liquibase
+SET DDL PARTITIONING OFF
+SET DDL SEGMENT_ATTRIBUTES OFF
+SET DDL TABLESPACE ON
 
 DEFINE _EDITOR=vi
 
 SCRIPT /Users/brian.shaver/.sql/prompt.js
 SCRIPT /Users/brian.shaver/.sql/fivos_sqlcl.js
-
-SET sqlprompt "_user'@'_connect_identifier > "
-SET sqlformat ansiconsole
-SET serveroutput on
-
+SCRIPT /Volumes/GitWork/Projects/plsql-formatter-settings/sqlcl/format.js --register
