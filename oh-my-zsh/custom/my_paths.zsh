@@ -22,3 +22,6 @@ export PATH="$PATH:$HOME/.rvm/bin"
 # Your local scripts stuff
 export PATH="$PATH:$HOME/local/bin"
 
+# support 2nd homebrew installed under x86 arch /usr/local prefix
+#   this was required to install an x86 jdk needed for old Talend Studio
+if [[ $(arch) == "i386" ]]; then eval "$(/usr/local/bin/brew shellenv)"; fi
