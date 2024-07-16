@@ -11,7 +11,7 @@ export PATH=$PATH:$ORA_CLIENT
 export LIQUIBASE_HOME=/opt/homebrew/opt/liquibase/libexec
 
 export SQLPATH=${HOME}/.sql:${HOME}/Documents/Projects/m2s_oracle_apex/scripts/sql
-export SQLCL=/opt/homebrew/Caskroom/sqlcl/24.1.0.087.0929/sqlcl
+export SQLCL=/opt/homebrew/Caskroom/sqlcl/24.2.0.180.1721/sqlcl
 export PATH=${SQLCL}/bin:"$PATH"
 # sqlCL requires JDK11 to include JavaScript engine
 alias sql='PATH=/opt/homebrew/opt/openjdk@11/bin/:${PATH} ${SQLCL}/bin/sql'
