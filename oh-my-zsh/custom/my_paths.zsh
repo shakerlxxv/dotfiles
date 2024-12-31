@@ -1,8 +1,6 @@
-export PATH=/opt/homebrew/Caskroom/sqlcl/23.4.0.023.2321/sqlcl/bin:"$PATH"
-
 export PATH=/opt/utPLSQL-cli/bin:$PATH
 
-export OCI_DIR=/opt/oracle/instantclient_11_2
+export OCI_DIR=/opt/oracle/instantclient_23_3
 export ORA_CLIENT=/opt/oracle/instantclient
 export OCI_DIR=$ORA_CLIENT
 export TNS_ADMIN=$ORA_CLIENT/network/admin
@@ -11,7 +9,7 @@ export PATH=$PATH:$ORA_CLIENT
 export LIQUIBASE_HOME=/opt/homebrew/opt/liquibase/libexec
 
 export SQLPATH=${HOME}/.sql:${HOME}/Documents/Projects/m2s_oracle_apex/scripts/sql
-export SQLCL=/opt/homebrew/Caskroom/sqlcl/24.2.0.180.1721/sqlcl
+export SQLCL=/opt/homebrew/Caskroom/sqlcl/24.3.2.330.1718/sqlcl
 export PATH=${SQLCL}/bin:"$PATH"
 # sqlCL requires JDK11 to include JavaScript engine
 alias sql='PATH=/opt/homebrew/opt/openjdk@11/bin/:${PATH} ${SQLCL}/bin/sql'
